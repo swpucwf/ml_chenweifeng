@@ -15,6 +15,7 @@ class Edsr:
         self.scaling_factor = 0.1
         self.bias_initializer = tf.constant_initializer(value=0.0)
         self.PS = 3 * (scale*scale) #channels x scale^2
+        # xavier初始化
         self.xavier = tf.contrib.layers.xavier_initializer()
 
         # -- Filters & Biases --

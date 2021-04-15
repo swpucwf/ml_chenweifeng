@@ -56,7 +56,7 @@ if __name__ == "__main__":
         exit()
 
     # Set gpu
-    config = tf.ConfigProto()
+    config = tf.compat.v1.ConfigProto()
     config.gpu_options.allow_growth = True
 
     # Create run instance
